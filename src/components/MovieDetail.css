@@ -1,0 +1,101 @@
+.movie_detail {
+    display: flex;
+    padding: 2rem 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #654ea3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #654ea3, #c58ba3, #654ea3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #654ea3, #c58ba3, #654ea3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 2rem;
+}
+
+.movie_detail-info {
+    padding: 0 1rem;
+    min-width: 356px;
+    max-width: 50%;
+}
+
+.movie_detail-image img {
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.movie_detail-image img:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.movie_detail_description {
+    min-width: 356px;
+    font-weight: 400;
+}
+
+.movie_release {
+    color: #ccc;
+}
+
+.movie_detail_title {
+    font-size: 1.5rem;
+}
+
+.movie_detail_subtitle {
+    font-size: 1.2rem;
+    margin: 3rem 0 0;
+}
+
+.genre {
+    font-size: 12px;
+    padding: 0 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.genre:hover {
+    background-color: blueviolet;
+    border-color: blueviolet;
+    transition: 0.5s;
+}
+
+.votes{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+
+.full-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fde16d;
+}
+
+.empty-stars:before,
+.full-stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 20pt;
+}
+
+.empty-stars:before {
+    -webkit-text-stroke: 1px #848484;
+}
+
+.full-stars:before {
+    -webkit-text-stroke: 1px orange;
+}
