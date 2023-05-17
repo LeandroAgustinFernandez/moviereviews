@@ -1,4 +1,7 @@
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import "./MovieDetail.css";
+import { useEffect, useState } from "react";
 
 const MovieDetail = ({
   poster = "",
@@ -10,6 +13,12 @@ const MovieDetail = ({
 }) => {
   const year = new Date(release).getFullYear();
   const average = votes * 10;
+  // const [ready, setReady] = useState(false)
+
+  useEffect(() => {
+    
+  }, [])
+  
 
   return (
     <section className="movie_detail">
